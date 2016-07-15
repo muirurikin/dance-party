@@ -1,74 +1,63 @@
-div {width: 600px; height: 504px;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO1QO3yW_NwCVZULMobzUgBM57FHVY_3Mr6Z9AEdgy_sG5WFDR);
-  -webkit-animation: gangham 4s steps(23,start) infinite,
-    movearound 10s steps(69,end) infinite 44ms;
-  animation: gangham 6s steps(23,start) infinite,
-    movearound 7s steps(69,end) infinite alternate 44ms;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
+@-webkit-keyframes dance {
+    from {
+        background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6wnfrdldtslbjvnTyx5VSxZDVhpwLySEKDfuVi5-8ptFlY9nR);
+        left: 0px;
+    }
+    to {
+        left: 200px; 
+        background:  url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfqQ9LItDBUwWYJAFh2eBBu8f9282AuIhCwnwpXsQHmF56K4rnCg);
+    }
 }
-@-webkit-keyframes gangham {
-  0% {background-position: 0 0}
-  100% {background-position: -5175px 0}
+.dance {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: dance 2s linear infinite alternate-reverse both;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    
 }
-@keyframes gangham {
-  0% {background-position: 0 0}
-  100% {background-position: -5175px 0}
+@-webkit-keyframes ju {
+    from {
+        background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6wnfrdldtslbjvnTyx5VSxZDVhpwLySEKDfuVi5-8ptFlY9nR);top: 100px;
+        left:0px;
+    }
+    to {
+        left: 0px; 
+        background:  url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfqQ9LItDBUwWYJAFh2eBBu8f9282AuIhCwnwpXsQHmF56K4rnCg);bottom: 200px;left: 100px;
+    }
 }
-@-webkit-keyframes movearound {
-  0% {-webkit-transform: translatex(0)}
-  100% {-webkit-transform: translatex(600px);}
+.ju {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: ju 2s linear infinite alternate-reverse both;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    
 }
-
-@keyframes movearound {
-  0% {transform: translatex(0)}
-  100% {transform: translatex(600px);}
-});
-  -webkit-animation: gangham 4s steps(23,start) infinite,
-    movearound 10s steps(69,end) infinite 44ms;
-  animation: gangham 6s steps(23,start) infinite,
-    movearound 7s steps(69,end) infinite alternate 44ms;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
+@-webkit-keyframes chini {
+    from {
+        background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6wnfrdldtslbjvnTyx5VSxZDVhpwLySEKDfuVi5-8ptFlY9nR);
+        left: 200px;
+    }
+    to {
+        bottom: 0px; 
+        background:  url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfqQ9LItDBUwWYJAFh2eBBu8f9282AuIhCwnwpXsQHmF56K4rnCg);
+    }
 }
-@-webkit-keyframes gangham {
-  0% {background-position: 0 0}
-  100% {background-position: -5175px 0}
+.chini {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: chini 2s linear infinite alternate-reverse both;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    
 }
-@keyframes gangham {
-  0% {background-position: 0 0}
-  100% {background-position: -5175px 0}
-}
-@-webkit-keyframes movearound {
-  0% {-webkit-transform: translatex(0)}
-  100% {-webkit-transform: translatex(600px);}
-}
-
-@keyframes movearound {
-  0% {transform: translatex(0)}
-  100% {transform: translatex(600px);}
-);
-  -webkit-animation: gangham 4s steps(23,start) infinite,
-    movearound 12s steps(69,end) infinite 44ms;
-  animation: gangham 4s steps(23,start) infinite,
-    movearound 12s steps(69,end) infinite alternate 44ms;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-}
-@-webkit-keyframes gangham {
-  0% {background-position: 0 0}
-  100% {background-position: -5175px 0}
-}
-@keyframes gangham {
-  0% {background-position: 0 0}
-  100% {background-position: -5175px 0}
-}
-@-webkit-keyframes movearound {
-  0% {-webkit-transform: translatex(0)}
-  100% {-webkit-transform: translatex(600px);}
-}
-
-@keyframes movearound {
-  0% {transform: translatex(0)}
-  100% {transform: translatex(600px);}
+.body {
+    background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZHVH83adwZo-Wbjrww252BiBSFhGs2CM1pK2NAvLeX9Wlei4wGw);
 }
